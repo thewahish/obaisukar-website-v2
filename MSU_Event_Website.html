@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Obai Sukar | MSU Human Library Event</title>
+<meta name="description" content="Quick reference guide for tailored conversations at MSU Human Library Event with Obai Sukar, award-winning sound designer, creative director, and media pioneer.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Inter:wght@400;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --deep-navy: #292663;
+  --blue: #00AEEF;
+  --pink: #EC008C;
+  --orange: #FBB04C;
+  --purple: #92278F;
+  --white: #FFFFFF;
+  --bg-light: #F8F9FA;
+  --text-dark: #1a1a1a;
+  --text-gray: #666666;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--white);
+  color:var(--text-dark);
+  font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+  overflow-x:hidden;
+}
+
+h1,h2,h3{font-family:Poppins,sans-serif;font-weight:700}
+
+a{color:var(--blue);text-decoration:none;transition:color 0.3s ease}
+a:hover{color:var(--pink);text-decoration:underline}
+
+.container{width:92%;max-width:1200px;margin:0 auto;position:relative}
+
+/* Header */
+.header{
+  background:var(--deep-navy);
+  padding:40px 0;
+  text-align:center;
+  border-bottom:4px solid var(--pink);
+  position:relative;
+  overflow:hidden;
+}
+
+.header:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(236, 0, 140, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 174, 239, 0.1) 0%, transparent 50%);
+  pointer-events:none;
+  z-index:0;
+}
+
+.header > *{position:relative;z-index:1}
+
+.logo{
+  width:200px;
+  height:auto;
+  margin-bottom:20px;
+  filter:drop-shadow(0 0 20px rgba(255,255,255,0.3));
+  animation:logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat{
+  0%,100%{transform:translateY(0px)}
+  50%{transform:translateY(-10px)}
+}
+
+.header h1{
+  font-family:Poppins,sans-serif;
+  font-size:2.5rem;
+  font-weight:700;
+  color:var(--white);
+  margin-bottom:10px;
+  text-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+.subtitle{
+  font-family:Inter,sans-serif;
+  font-size:1.1rem;
+  font-weight:600;
+  color:var(--orange);
+  text-shadow:0 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Section Styles */
+.section{
+  margin:40px 0;
+  padding:40px;
+  border-left:6px solid;
+  background:var(--bg-light);
+  border-radius:16px;
+  position:relative;
+  overflow:hidden;
+  transition:all 0.4s ease;
+}
+
+.section:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.section.quick{border-color:var(--blue)}
+.section.students{border-color:var(--pink)}
+.section.educators{border-color:var(--orange)}
+.section.artists{border-color:var(--purple)}
+.section.key-points{border-color:var(--deep-navy)}
+
+.section h2{
+  font-family:Orbitron,sans-serif;
+  font-size:1.8rem;
+  font-weight:700;
+  margin-bottom:24px;
+  color:var(--deep-navy);
+  text-transform:uppercase;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+
+.section h2:before{
+  content:'';
+  position:absolute;
+  bottom:-8px;
+  left:0;
+  width:60%;
+  height:3px;
+  background:currentColor;
+  animation:underlineGrow 0.6s ease-out;
+}
+
+@keyframes underlineGrow{
+  from{width:0%}
+  to{width:60%}
+}
+
+.section h3{
+  font-family:Poppins,sans-serif;
+  font-size:1.3rem;
+  font-weight:700;
+  margin-top:20px;
+  margin-bottom:12px;
+  color:var(--blue);
+}
+
+.section p{
+  font-size:1.05rem;
+  line-height:1.7;
+  margin-bottom:16px;
+  color:var(--text-dark);
+}
+
+.quote{
+  background:var(--white);
+  padding:24px;
+  border-left:4px solid var(--pink);
+  margin:20px 0;
+  font-style:italic;
+  font-size:1.1rem;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  position:relative;
+}
+
+.quote:before{
+  content:'"';
+  position:absolute;
+  top:-10px;
+  left:10px;
+  font-size:4rem;
+  color:var(--pink);
+  opacity:0.2;
+  font-family:Georgia,serif;
+}
+
+/* Connection Hooks Grid */
+.hooks-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+  margin-top:20px;
+}
+
+.hook-card{
+  background:var(--white);
+  border:3px solid;
+  border-radius:12px;
+  padding:24px;
+  transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position:relative;
+  overflow:hidden;
+}
+
+.hook-card:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:currentColor;
+  opacity:0;
+  transition:opacity 0.3s ease;
+  pointer-events:none;
+}
+
+.hook-card:hover:before{opacity:0.05}
+
+.hook-card:hover{
+  transform:translateY(-8px) scale(1.02);
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.hook-card.h1{border-color:var(--blue)}
+.hook-card.h2{border-color:var(--pink)}
+.hook-card.h3{border-color:var(--orange)}
+.hook-card.h4{border-color:var(--purple)}
+
+.hook-card h4{
+  font-family:Poppins,sans-serif;
+  font-size:1.1rem;
+  font-weight:700;
+  color:var(--deep-navy);
+  margin-bottom:12px;
+}
+
+.hook-card p{
+  font-size:0.95rem;
+  line-height:1.6;
+  margin:0;
+  color:var(--text-gray);
+}
+
+/* Stats Box */
+.stats-box{
+  background:var(--deep-navy);
+  color:var(--white);
+  padding:48px;
+  border-radius:20px;
+  margin-top:40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.stats-box:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(236, 0, 140, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 174, 239, 0.15) 0%, transparent 50%);
+  pointer-events:none;
+  z-index:0;
+}
+
+.stats-box > *{position:relative;z-index:1}
+
+.stats-box h3{
+  font-family:Orbitron,sans-serif;
+  font-size:1.8rem;
+  font-weight:700;
+  margin-bottom:32px;
+  color:var(--orange);
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:32px;
+}
+
+.stat-item{
+  font-size:1rem;
+  font-weight:600;
+}
+
+.stat-item .number{
+  display:block;
+  font-size:3.5rem;
+  font-weight:900;
+  color:var(--orange);
+  margin-bottom:8px;
+  font-family:Orbitron,sans-serif;
+  animation:counterPulse 2s ease-in-out infinite;
+}
+
+@keyframes counterPulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+}
+
+/* QR Footer */
+.qr-footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:32px;
+  margin-top:40px;
+  padding:32px;
+  background:var(--bg-light);
+  border-radius:16px;
+  border:3px solid var(--deep-navy);
+  transition:all 0.3s ease;
+}
+
+.qr-footer:hover{
+  transform:scale(1.02);
+  box-shadow:0 8px 24px rgba(0,0,0,0.1);
+}
+
+.qr-box{
+  width:150px;
+  height:150px;
+  background:var(--white);
+  border:4px solid var(--orange);
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.qr-box:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(45deg,transparent,rgba(255,255,255,0.3),transparent);
+  animation:shine 3s ease-in-out infinite;
+}
+
+@keyframes shine{
+  0%{transform:translateX(-100%) translateY(-100%)}
+  100%{transform:translateX(100%) translateY(100%)}
+}
+
+.qr-code-img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+}
+
+.qr-text{
+  font-family:Poppins,sans-serif;
+  font-size:1.2rem;
+  font-weight:700;
+  color:var(--deep-navy);
+}
+
+.qr-text .url{
+  display:block;
+  color:var(--pink);
+  font-size:1.4rem;
+  margin-top:8px;
+}
+
+/* Scroll Animations */
+.scroll-animate{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.8s ease-out;
+}
+
+.scroll-animate.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.stagger-1{animation-delay:0.1s}
+.stagger-2{animation-delay:0.2s}
+.stagger-3{animation-delay:0.3s}
+.stagger-4{animation-delay:0.4s}
+
+/* Emoji Icons */
+.emoji-icon{
+  font-size:1.8rem;
+  margin-right:12px;
+  display:inline-block;
+  animation:bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .header h1{font-size:1.8rem}
+  .subtitle{font-size:0.95rem}
+  .logo{width:150px}
+  .section{padding:24px;margin:24px 0}
+  .section h2{font-size:1.4rem}
+  .hooks-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr}
+  .stat-item .number{font-size:2.5rem}
+  .qr-footer{flex-direction:column;gap:24px}
+  .stats-box{padding:32px 24px}
+}
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <img src="Logo_White.png" alt="Obai Sukar Logo" class="logo">
+      <h1>MSU Human Library Event</h1>
+      <div class="subtitle">Quick Reference for Tailored Conversations</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Quick Intro -->
+    <div class="section quick scroll-animate">
+      <h2><span class="emoji-icon">🎯</span>Quick Intro (30 seconds)</h2>
+      <div class="quote">
+        "I'm Obai — I'm a sound designer and director. I build platforms for Arab storytelling — like Karazah Channel, an educational streaming service for kids — and I create animated films like <em>Eternal Parade</em>, which won a Student Academy Award. My work's been featured by NPR, Al Jazeera, and the Washington Post."
+      </div>
+      <p><strong>Follow-up:</strong> "Check out obaisukar.com if you want to see the projects — or grab a brochure."</p>
+    </div>
+
+    <!-- For Students -->
+    <div class="section students scroll-animate">
+      <h2><span class="emoji-icon">🎓</span>For Students (1-2 minutes)</h2>
+
+      <h3>Opening:</h3>
+      <p>"I'm Obai — I make worlds through sound and animation. I started as an audio engineer at Spacetoon in Damascus, moved through Istanbul, and now I run a studio in Flint that builds the infrastructure Arab storytelling deserves."</p>
+
+      <h3>Middle:</h3>
+      <p>"My big project right now is Karazah Channel — think Netflix for Arab kids, but with the curiosity of Studio Ghibli. I also directed <em>Eternal Parade</em>, an animated short about my grandfather that won a Student Academy Award. It started as grief and became 1,400 hand-drawn frames."</p>
+
+      <h3>Hook:</h3>
+      <div class="quote">
+        "If you're trying to figure out how to turn your culture into your career — not in a shallow way, but in a <em>this is my life's work</em> way — let's talk."
+      </div>
+    </div>
+
+    <!-- For Educators & Parents -->
+    <div class="section educators scroll-animate">
+      <h2><span class="emoji-icon">👨‍🏫</span>For Educators & Parents (1-2 minutes)</h2>
+
+      <h3>Opening:</h3>
+      <p>"I'm Obai Sukar — I design sound and direct animation for Arab audiences, especially kids. I believe our children deserve media that respects their intelligence and reflects their complexity."</p>
+
+      <h3>Middle:</h3>
+      <p>"That's why I built Karazah Channel. Right now, Arab kids grow up on dubbed Disney or low-budget cartoons that don't take them seriously. Karazah is different — it's educational, it's beautiful, and it's entirely in Arabic. Think <em>Sesame Street</em> meets <em>Studio Ghibli.</em>"</p>
+
+      <h3>Hook:</h3>
+      <div class="quote">
+        "If you've ever wished there was better Arabic media for kids — or if you're an educator looking for culturally grounded resources — I'd love to hear your thoughts."
+      </div>
+    </div>
+
+    <!-- For Artists & Technologists -->
+    <div class="section artists scroll-animate">
+      <h2><span class="emoji-icon">🎨</span>For Artists & Technologists (1-2 minutes)</h2>
+
+      <h3>Opening:</h3>
+      <p>"I'm Obai — sound designer, director, and founder of SS Media. I work at the intersection of storytelling, technology, and cultural preservation."</p>
+
+      <h3>Middle:</h3>
+      <p>"I use animation, sound design, and streaming platforms to build what I call <em>infrastructure for Arab storytelling.</em> Not just content — systems. Platforms. Pipelines. The goal is to create tools the next generation can build on, not just consume."</p>
+
+      <h3>Hook:</h3>
+      <div class="quote">
+        "If you're interested in how tech and art can preserve culture — or if you're building something similar in your own community — I'd love to compare notes."
+      </div>
+    </div>
+
+    <!-- Connection Hooks -->
+    <div class="section key-points scroll-animate">
+      <h2><span class="emoji-icon">🔗</span>Connection Hooks (By Attendee Type)</h2>
+
+      <div class="hooks-grid">
+        <div class="hook-card h1 stagger-1">
+          <h4>Student Between Cultures</h4>
+          <p>"I know that feeling. 'Not Arab enough' in the West, 'not American enough' back home. My work creates space where we don't have to choose."</p>
+        </div>
+
+        <div class="hook-card h2 stagger-2">
+          <h4>Artist Seeking Sustainability</h4>
+          <p>"The hardest part isn't making art — it's building systems where art can survive long-term. Let's talk infrastructure, not just inspiration."</p>
+        </div>
+
+        <div class="hook-card h3 stagger-3">
+          <h4>Parent/Educator</h4>
+          <p>"What if Arab kids had media that treated them like the curious, brilliant humans they are? That's Karazah. I'd love your feedback."</p>
+        </div>
+
+        <div class="hook-card h4 stagger-4">
+          <h4>Technologist/Entrepreneur</h4>
+          <p>"I'm not just making content — I'm building platforms. If you're working on tools for underrepresented communities, we should connect."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-box scroll-animate">
+      <h3>Key Stats to Mention</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="number">715K+</span>
+          YouTube Subscribers
+        </div>
+        <div class="stat-item">
+          <span class="number">301M+</span>
+          Total Views
+        </div>
+        <div class="stat-item">
+          <span class="number">2016</span>
+          Student Academy Award
+        </div>
+      </div>
+    </div>
+
+    <!-- QR Code Footer -->
+    <div class="qr-footer scroll-animate">
+      <div class="qr-box">
+        <img src="QR.png" alt="QR Code - obaisukar.com" class="qr-code-img">
+      </div>
+      <div class="qr-text">
+        Scan for full portfolio
+        <span class="url">obaisukar.com</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Scroll Animation Observer
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Observe scroll animations
+      document.querySelectorAll('.scroll-animate').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Staggered animations for hook cards
+      const hookCards = document.querySelectorAll('.hook-card');
+      hookCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+
+        setTimeout(() => {
+          card.style.transition = 'all 0.6s ease-out';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 100 * (index + 1));
+      });
+
+      // Add hover effect to sections
+      document.querySelectorAll('.section').forEach(section => {
+        section.addEventListener('mouseenter', function() {
+          this.style.borderLeftWidth = '10px';
+        });
+
+        section.addEventListener('mouseleave', function() {
+          this.style.borderLeftWidth = '6px';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

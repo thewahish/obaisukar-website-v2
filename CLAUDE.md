@@ -1,183 +1,152 @@
-# Website 2.0 - Obai Sukar Portfolio
+﻿# CLAUDE Project Instructions
+**Auto-generated from Master AI Ecosystem**
+**Project:** website2.0
+**Domain:** Web-Development
+**Last Updated:** 2025-11-30_18-25-06
 
-<!-- Inherits from MASTER_CLAUDE.md and web-development.md -->
+---
 
-## 🎯 Project Overview
-**Type**: Web Development
-**Status**: Active
-**Domain Module**: `modules/domains/web-development.md`
+## ðŸŽ¯ PROJECT CONTEXT
 
-Standalone single-page portfolio website for Obai Sukar - a creator, engineer, and entrepreneur specializing in sound design/music production and IT consultancy.
+### **Project Classification**
+- **Domain:** [Web-Development|Games|Business-Tools|Content-Creation|Research-Development]
+- **Status:** [Active|Maintenance|Complete|Archived]  
+- **Priority:** [Urgent|High|Medium|Low]
+- **Tech Stack:** [Languages, frameworks, tools]
 
-## 📋 Project-Specific Overrides
+### **Project Summary**
+[Brief description of project purpose and current state]
 
-### Agent Pipeline Customization
+---
+
+## ðŸ¤– AGENT PIPELINE CONFIGURATION
+
+### **Recommended Pipeline** (Auto-selected by domain)
+[Agent sequence will be populated based on domain classification]
+
+### **Domain-Specific Rules**
+[Custom rules for this domain type will be inserted here]
+
+---
+
+## ðŸ“‹ CURRENT PROJECT STATUS
+
+### **Quest Tracking**
+- **Current Quest:** [Active development focus]
+- **Progress:** [Percentage complete]
+- **Next Milestones:** [Upcoming tasks]
+
+### **Quality Gates**
+- [ ] Tests passing
+- [ ] Linting clean  
+- [ ] Documentation updated
+- [ ] GitHub synced
+- [ ] Master system integration verified
+
+---
+
+## ðŸ”— INTEGRATION POINTS
+
+### **Dependencies**
+- **Parent Projects:** [Projects this depends on]
+- **Child Projects:** [Projects that depend on this]
+- **Shared Assets:** [Resources from GLOBAL-ASSETS]
+
+### **External Connections**
+- **APIs:** [External service integrations]
+- **Databases:** [Data storage connections]
+- **Services:** [Third-party tools and services]
+
+---
+
+## ðŸ—ï¸ MASTER ECOSYSTEM INTEGRATION
+
+### **Session Rules** (Auto-loaded from Master System)
+1. **Universal Verification:** All claims must be tagged with trust levels (âœ…âš ï¸â“âŒðŸ”„)
+2. **Logging Required:** All significant actions logged with timestamps
+3. **Backup Protocol:** Files moved to OLD/ before deletion, never destroyed
+4. **Quality Standards:** Domain-specific benchmarks must be met
+5. **GitHub Sync:** All changes committed with proper attribution
+
+### **Agent 13 Verification** (Applied to all outputs)
+- Source trust level verification for every claim
+- Primary source requirement for product features  
+- Visual verification for generated content
+- Project-specific quality threshold enforcement
+
+---
+
+## ðŸ“ PROJECT STRUCTURE
+
 ```
-Recommended Pipeline: 0 → 4 → 6 → 7 → 11 → 12
-Complexity Level: Moderate
-Quality Gates: Core Web Vitals, Canvas Performance, Mobile Responsiveness
+website2.0/
+â”œâ”€â”€ CLAUDE.md                 # This file
+â”œâ”€â”€ README.md                 # Project documentation
+â”œâ”€â”€ quest-status.json         # Progress tracking
+â”œâ”€â”€ .claude/                  # Local AI assets
+â”‚   â”œâ”€â”€ logs/
+â”‚   â”œâ”€â”€ assets/
+â”‚   â”œâ”€â”€ backups/
+â”‚   â””â”€â”€ versions/
+â”œâ”€â”€ OLD/                      # Archived files (never delete)
+â””â”€â”€ [project-specific files]
 ```
 
-### Web Development Enhancements
-- **Canvas Animation**: Advanced digital rain effect requiring performance optimization
-- **Interactive Media**: YouTube playlist player and SoundCloud integration
-- **Personal Branding**: Custom gradient color scheme and brand identity
-- **Portfolio Showcase**: Dynamic project grid with hover animations
+---
 
-## 🔧 Technical Configuration
+## ðŸ”§ PROJECT-SPECIFIC CONFIGURATION
 
-### Technology Stack
-- **Framework**: Vanilla JavaScript with Canvas API
-- **Build Tools**: None (self-contained single file)
-- **Deployment**: GitHub Pages or static hosting
-- **Testing**: Manual cross-browser testing
-
-### Development Commands
+### **Development Commands**
 ```bash
-# Development server
-python -m http.server 8000
-# or
-live-server
-
-# No build process (self-contained)
-# No package management (vanilla implementation)
+# Common operations for this project
+[Project-specific commands will be populated]
 ```
 
-### Repository Information
-- **GitHub URL**: [To be created in sync phase]
-- **Deployment URL**: [To be set up]
-- **Documentation**: index.html contains inline documentation
+### **Testing & Deployment**
+```bash  
+# Quality gates and deployment
+[Testing and deployment commands]
+```
 
-## 🎯 Project-Specific Quality Gates
-
-### Must-Have Checks
-- [ ] Canvas animation maintains 60fps
-- [ ] Core Web Vitals scores: LCP < 2.5s, FID < 100ms, CLS < 0.1
-- [ ] Mobile responsive on all devices (320px+)
-- [ ] Cross-browser compatibility (Chrome, Firefox, Safari, Edge)
-- [ ] Interactive elements accessible via keyboard
-- [ ] Portfolio images optimized and lazy-loaded
-
-### Performance Targets
-- **Canvas FPS**: 60fps consistent
-- **Initial Load**: < 3 seconds
-- **Asset Size**: < 2MB total
-- **Mobile Performance**: Lighthouse score > 90
-
-## 📂 File Structure Notes
-
-### Important Files
-- **index.html**: Complete website - HTML, CSS, JavaScript all embedded
-- **index_backup.html**: Previous version backup
-- **Assets/**: Image assets and brand materials
-- **mockups/**: Design mockups and references
-
-### Special Considerations
-- **Single File Architecture**: All code embedded for portability
-- **Canvas Performance**: Digital rain effect must be optimized for mobile
-- **Brand Consistency**: Custom color palette throughout all elements
-- **Self-Contained**: No external dependencies except Google Fonts
-
-## 🔒 Project-Specific Safety Protocols
-
-### Critical Rules
-- **Performance First**: Canvas animations must not impact user experience
-- **Brand Accuracy**: Use only verified brand colors and messaging
-- **Mobile Compatibility**: Test on actual mobile devices, not just desktop simulation
-
-### Never Do
-- ❌ Add external JavaScript dependencies that break self-contained nature
-- ❌ Use unverified personal information or achievements
-- ❌ Implement features that break mobile performance
-
-### Always Do
-- ✅ Test canvas performance on low-end devices
-- ✅ Verify all portfolio links and contact information
-- ✅ Maintain single-file architecture for easy deployment
-
-## 🎨 Brand/Style Guidelines
-
-### Visual Identity
-- **Colors**: 
-  - Deep Navy: #292663 (background)
-  - Blue: #00AEEF, Pink: #EC008C, Orange: #FBB04C, Purple: #92278F
-  - Text Light: #F0F0F0
-  - Gradient: Linear combination of blue, pink, orange
-- **Fonts**: Poppins (headings), Roboto (body) from Google Fonts
-- **Style**: Modern, technical, creative with animated elements
-
-### Content Guidelines
-- **Tone**: Professional yet creative, technical expertise with artistic flair
-- **Audience**: Potential employers, clients, collaborators in IT and media
-- **Message**: Dual expertise in technology and creative arts
-
-## 📊 Success Metrics
-
-### Primary Goals
-1. **Professional Presence**: Effective showcase of dual IT/creative expertise
-2. **Performance Excellence**: Fast, smooth experience on all devices
-3. **Engagement**: Interactive elements encourage exploration
-
-### Measurement Methods
-- **Load Speed**: Lighthouse performance audits
-- **User Engagement**: Analytics on section interactions
-- **Mobile Experience**: Device testing and performance monitoring
-
-## 🔄 Maintenance Notes
-
-### Regular Updates Needed
-- **Portfolio Projects**: Add new work examples quarterly
-- **Contact Information**: Verify and update as needed
-- **Performance**: Monitor and optimize canvas animations
-
-### Known Issues
-- **Canvas Battery**: Digital rain effect may impact mobile battery life
-- **Single File Size**: Large embedded assets can affect initial load
-- **Animation Complexity**: May need performance modes for different devices
-
-## 📞 Stakeholder Information
-
-### Primary Contacts
-- **Owner**: Obai Sukar - Personal portfolio and brand representation
-- **Technical**: Claude Code - Development and maintenance
-- **Content**: Based on verified achievements and portfolio
-
-### Approval Process
-1. **Content Review**: Verify all achievements and contact information
-2. **Performance Testing**: Cross-browser and device validation
-3. **Brand Approval**: Obai's final review and approval
+### **GitHub Integration**
+```bash
+# Repository: [GITHUB-REPO-URL]
+# Branch strategy: [BRANCH-SETUP]
+# Sync schedule: [SYNC-FREQUENCY]
+```
 
 ---
 
-## 🔗 Inheritance Chain
+## ðŸ“Š SUCCESS METRICS
 
-```
-MASTER_CLAUDE.md (Universal orchestrator)
-    ↓
-modules/domains/web-development.md (Web-specific patterns)
-    ↓
-website2.0/CLAUDE.md (Project-specific overrides)
-```
+### **Quality Indicators** (Domain-specific)
+[Metrics based on project domain]
 
-### From Master System
-- 12-Agent Framework with 0 → 4 → 6 → 7 → 11 → 12 pipeline
-- TodoWrite workflow management for multi-step tasks
-- Quality gates and performance optimization requirements
-- Fact verification for all personal/professional content
-
-### From Web Development Module
-- Core Web Vitals optimization and mobile-first approach
-- Cross-browser compatibility testing and responsive design
-- Performance monitoring and accessibility implementation
-- SEO optimization and semantic HTML structure
-
-### Project Overrides
-- Canvas animation performance optimization requirements
-- Single-file architecture maintenance for portability
-- Personal branding color scheme and visual identity
-- Interactive media integration with YouTube and SoundCloud
+### **Progress Tracking**
+- **Files Modified:** [Tracked automatically]
+- **Tests Added:** [Quality improvement tracking]  
+- **Issues Resolved:** [Problem-solving metrics]
+- **Features Completed:** [Development progress]
 
 ---
 
-*Last Updated: October 2024*
-*Version: 2.0*
+## âš¡ QUICK REFERENCE
+
+### **Emergency Protocols**
+- **Data Recovery:** Check OLD/ folder for previous versions
+- **Sync Issues:** Run quest-project-sync from root
+- **Quality Failures:** Re-run appropriate agent pipeline
+- **Integration Problems:** Verify dependencies in GLOBAL-ASSETS
+
+### **Common Tasks**
+- **Start Session:** Read this file + check quest-status.json
+- **Make Changes:** Follow backup protocol + log actions
+- **End Session:** Update quest-status.json + sync to GitHub
+- **Need Help:** Reference MASTER_AI_ECOSYSTEM_PROMPT.md
+
+---
+
+**ðŸŽ¯ Project ready for AI-assisted development with full Master Ecosystem integration!**
+
+*Last verified: [VERIFICATION-TIMESTAMP]*
+*Next review: [REVIEW-DATE]*
